@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,80 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleImageGesture1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Red-kitten.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0AE-6g-4h8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0Hq-ii-5Ob" appends="YES" id="sRs-Mn-ZIO"/>
+                                </connections>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBr-Op-2zm" userLabel="View1">
+                                <rect key="frame" x="0.0" y="85" width="79" height="95"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MGa-aj-SJh" appends="YES" id="TKj-Mu-nGH"/>
+                                    <outletCollection property="gestureRecognizers" destination="0U4-TM-Daa" appends="YES" id="7Zc-rE-1Ry"/>
+                                </connections>
+                            </view>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-Q9-C9g">
+                                <rect key="frame" x="174" y="330" width="103" height="87"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.91006952429999999" blue="0.94640023949999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="puN-Ca-pN8" appends="YES" id="0ZU-uZ-9eh"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0AE-6g-4h8" secondAttribute="trailing" id="2gg-Fs-QIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nBr-Op-2zm" secondAttribute="trailing" constant="296" id="Iwm-RR-mBw"/>
+                            <constraint firstItem="0AE-6g-4h8" firstAttribute="leading" secondItem="nBr-Op-2zm" secondAttribute="leading" id="QKI-Og-RYx"/>
+                            <constraint firstItem="0AE-6g-4h8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tvc-uB-LhV"/>
+                            <constraint firstItem="0AE-6g-4h8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bSx-Wf-4h3"/>
+                            <constraint firstItem="0AE-6g-4h8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cyd-VT-5ni"/>
+                            <constraint firstItem="ekV-Q9-C9g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="310" id="k9w-QF-a6R"/>
+                            <constraint firstItem="nBr-Op-2zm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="kQH-Sf-ZNA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nBr-Op-2zm" secondAttribute="bottom" constant="487" id="ndJ-vx-4TF"/>
+                            <constraint firstItem="ekV-Q9-C9g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="phD-lc-RQn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ekV-Q9-C9g" secondAttribute="bottom" constant="250" id="vUM-jK-JKT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ekV-Q9-C9g" secondAttribute="trailing" constant="98" id="wiL-Ya-Sxc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0Hq-ii-5Ob">
+                    <connections>
+                        <action selector="tapGesture1:" destination="BYZ-38-t0r" id="azP-nC-qWM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="MGa-aj-SJh">
+                    <connections>
+                        <action selector="tapGesture2:" destination="BYZ-38-t0r" id="rrS-C1-qxL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="1" id="0U4-TM-Daa">
+                    <connections>
+                        <action selector="longPressGesture:" destination="BYZ-38-t0r" id="Mxk-2Q-ZEf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="puN-Ca-pN8">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="fBC-WT-5zJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="29.23538230884558"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Red-kitten.jpg" width="1380" height="920"/>
+    </resources>
 </document>

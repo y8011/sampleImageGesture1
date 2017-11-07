@@ -14,6 +14,7 @@
 		B23597061FB222C600D8EE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23597041FB222C600D8EE80 /* LaunchScreen.storyboard */; };
 		B23597111FB222C600D8EE80 /* sampleImageGesture1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23597101FB222C600D8EE80 /* sampleImageGesture1Tests.swift */; };
 		B235971C1FB222C600D8EE80 /* sampleImageGesture1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B235971B1FB222C600D8EE80 /* sampleImageGesture1UITests.swift */; };
+		B235972A1FB2230800D8EE80 /* Red-kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B23597291FB2230800D8EE80 /* Red-kitten.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B23597171FB222C600D8EE80 /* sampleImageGesture1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleImageGesture1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B235971B1FB222C600D8EE80 /* sampleImageGesture1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleImageGesture1UITests.swift; sourceTree = "<group>"; };
 		B235971D1FB222C600D8EE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23597291FB2230800D8EE80 /* Red-kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Red-kitten.jpg"; path = "../../../../Downloads/Red-kitten.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		B23596FA1FB222C600D8EE80 /* sampleImageGesture1 */ = {
 			isa = PBXGroup;
 			children = (
+				B23597291FB2230800D8EE80 /* Red-kitten.jpg */,
 				B23596FB1FB222C600D8EE80 /* AppDelegate.swift */,
 				B23596FD1FB222C600D8EE80 /* ViewController.swift */,
 				B23596FF1FB222C600D8EE80 /* Main.storyboard */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B235972A1FB2230800D8EE80 /* Red-kitten.jpg in Resources */,
 				B23597061FB222C600D8EE80 /* LaunchScreen.storyboard in Resources */,
 				B23597031FB222C600D8EE80 /* Assets.xcassets in Resources */,
 				B23597011FB222C600D8EE80 /* Main.storyboard in Resources */,
