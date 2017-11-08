@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+
+    var myAudioPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        makeSound()
     }
 
     @IBAction func tapGesture1(_ sender: UITapGestureRecognizer) {
         print("aaa")
+        self.myAudioPlayer.play()
+        
     }
     
     @IBAction func tapGesture2(_ sender: UITapGestureRecognizer) {
@@ -66,6 +72,21 @@ class ViewController: UIViewController {
         )
         
     }
+    
+    func makeSound() {
+        let soundFile = Bundle.main.path(forResource: "cat7", ofType: "mp3")!
+        let soundClear = URL(fileURLWithPath: soundFile )
+        
+        //AVAudioPlayerのインスタンス化
+        do {
+            myAudioPlayer = try AVAudioPlayer(contentsOf: soundClear as URL)
+        }catch{
+            print("Failed AVAudioPlayer Instance")
+        }
+        myAudioPlayer.prepareToPlay()
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

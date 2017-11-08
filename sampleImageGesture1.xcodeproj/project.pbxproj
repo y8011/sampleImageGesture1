@@ -15,6 +15,8 @@
 		B23597111FB222C600D8EE80 /* sampleImageGesture1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23597101FB222C600D8EE80 /* sampleImageGesture1Tests.swift */; };
 		B235971C1FB222C600D8EE80 /* sampleImageGesture1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B235971B1FB222C600D8EE80 /* sampleImageGesture1UITests.swift */; };
 		B235972A1FB2230800D8EE80 /* Red-kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B23597291FB2230800D8EE80 /* Red-kitten.jpg */; };
+		B2C5A9CB1FB28CFF00C233C6 /* cat7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2C5A9CA1FB28CFE00C233C6 /* cat7.mp3 */; };
+		B2C5A9CD1FB28E2000C233C6 /* cat7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2C5A9CC1FB28E2000C233C6 /* cat7.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B235971B1FB222C600D8EE80 /* sampleImageGesture1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleImageGesture1UITests.swift; sourceTree = "<group>"; };
 		B235971D1FB222C600D8EE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23597291FB2230800D8EE80 /* Red-kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Red-kitten.jpg"; path = "../../../../Downloads/Red-kitten.jpg"; sourceTree = "<group>"; };
+		B2C5A9CA1FB28CFE00C233C6 /* cat7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cat7.mp3; path = ../../../../Downloads/cat7.mp3; sourceTree = "<group>"; };
+		B2C5A9CC1FB28E2000C233C6 /* cat7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat7.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				B23597291FB2230800D8EE80 /* Red-kitten.jpg */,
+				B2C5A9CA1FB28CFE00C233C6 /* cat7.mp3 */,
+				B2C5A9CC1FB28E2000C233C6 /* cat7.mp3 */,
 				B23596FB1FB222C600D8EE80 /* AppDelegate.swift */,
 				B23596FD1FB222C600D8EE80 /* ViewController.swift */,
 				B23596FF1FB222C600D8EE80 /* Main.storyboard */,
@@ -239,6 +245,8 @@
 				B23597061FB222C600D8EE80 /* LaunchScreen.storyboard in Resources */,
 				B23597031FB222C600D8EE80 /* Assets.xcassets in Resources */,
 				B23597011FB222C600D8EE80 /* Main.storyboard in Resources */,
+				B2C5A9CB1FB28CFF00C233C6 /* cat7.mp3 in Resources */,
+				B2C5A9CD1FB28E2000C233C6 /* cat7.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
